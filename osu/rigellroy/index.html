@@ -8,7 +8,7 @@
         <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
         <style>
             * {box-sizing: border-box}
-            .tab {float: left;border: 1px solid #b0fff4;margin-left: 80px;background-color: #808080;width: auto;height: auto}
+            .tab {float: left;border: 0px solid #b0fff4;margin-left: 80px;background-color: #b0fff4;width: auto;height: auto}
             .tab button {display: block;background-color: #b0fff4;color: black;font-family: "Open Sans", sans-serif;font-weight: 400;font-size: 14px;padding: 22px 16px;width: 100%;border: none;outline: none;text-align: left;cursor: pointer}
             .tab button:active {background-color: #808080}
             .tab button.active {background-color: #69fff2}
@@ -19,7 +19,7 @@
             a.prof:hover, a.prof:active {color: #69fff2}
             a.skins:link, a.skins:visited {background-color: #ff6666;color: white;padding: 14px 25px;text-align: center;width: auto;height: auto;text-decoration: none;display: inline-block}
             a.skins:hover, a.skins:active {background-color: #f44336}
-            @media screen and (max-width: 1250px) {.tabcontent {margin-left: 80px}}
+            @media screen and (max-width: 1600px) {.tabcontent {margin-left: 80px}}
         </style>
     </head>
     <body>
@@ -29,19 +29,19 @@
         </p>
         <h2 style="margin: 30px 0px 10px 65px">Skins</h2>
         <div class="tab">
-            <button style="height: 44px;padding-top: 12px" class="tablinks" onclick="openSkin(event, 'NoColor')">NaanAtmosphere (NoColor)</button>
-            <button style="height: 44px;padding-top: 13px" class="tablinks" onclick="openSkin(event, 'Trail')">NaanAtmosphere (NoColor+Trail)</button>
+            <button style="height: 44px;padding-top: 12px;background-color: #b0fff4;color: black" class="tablinks mdc-button mdc-ripple-surface" onclick="openSkin(event, 'NoColor')">NaanAtmosphere (NoColor)</button>
+            <button style="height: 44px;padding-top: 13px;background-color: #b0fff4;color: black" class="tablinks mdc-button mdc-ripple-surface" onclick="openSkin(event, 'Trail')">NaanAtmosphere (NoColor+Trail)</button>
         </div>
         <div id="NoColor" class="tabcontent">
             <h3>NaanAtmosphere (NoColor)</h3>
-            <p style="margin-top: -10px">Skin made by: ???<br>Changes made by: ???</p>
+            <p style="margin-top: -10px">Skin made by: <span style="font-weight: 800">???</span><br>Changes made by: <span style="font-weight: 800">kinematik (Naan-E)</span>, <span style="font-weight: 800">rigellroy</span></p>
             <p style="padding-top: 20px">
                 <a class="mdc-button mdc-button--raised mdc-ripple-surface" style="background-color: #ff6666" href="NaanAtmosphere%20(NoColor).osk">Download</a>
             </p>
         </div>
         <div id="Trail" class="tabcontent">
             <h3>NaanAtmosphere (NoColor+Trail)</h3>
-            <p style="margin-top: -10px">Skin made by: ???<br>Changes made by: ???</p>
+            <p style="margin-top: -10px">Skin made by: <span style="font-weight: 800">???</span><br>Changes made by: <span style="font-weight: 800">kinematik (Naan-E)</span>, <span style="font-weight: 800">rigellroy</span></p>
             <p style="padding-top: 20px">
                 <a class="mdc-button mdc-button--raised mdc-ripple-surface" style="background-color: #ff6666" href="NaanAtmosphere%20(NoColor+Trail).osk">Download</a>
             </p>

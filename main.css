@@ -59,21 +59,11 @@ h1 {
     border-bottom: 3px solid lightgray;
     padding: 0 0 15px 0;
     font-size: 90px;
+    text-shadow: 0px 1px 10px black;
     animation-name: fade-in-text;
     animation-duration: 1s;
     animation-delay: 1s;
     animation-fill-mode: backwards;
-    text-shadow: 0px 1px 10px black;
-}
-
-p {
-    width: 100%;
-    padding: 0;
-    text-align: center;
-}
-
-#v {
-    color: lightgray;
 }
 
 #lroy {
@@ -81,14 +71,11 @@ p {
 }
 
 a {
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
+    width: 100%;
+    display: block;
     font-size: 30px;
     text-decoration: none;
-    margin: 20px 20% 20px 20%;
     padding-bottom: 3px;
-    border-bottom: 3px solid lightgray;
     color: lightgray;
     animation-name: fade-in-text;
     animation-duration: 1s;
@@ -97,14 +84,8 @@ a {
     text-shadow: 0px 1px 10px black;
 }
 
-a:hover {
-    color: #7638BD;
-    border-bottom: 3px solid #7638BD;
-    text-shadow: 0px 1px 10px rgb(55, 26, 88);
-}
-
 /*Desktop*/
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1100px) {
     .main {
         width: 60%;
         margin: 10% 20% 10% 20%;
@@ -112,35 +93,21 @@ a:hover {
 
     h1 {
         font-size: 130px;
-    }
-
-    p {
-        padding-right: 5%;
-        padding-left: 0;
-        text-align: left;
+        width: unset;
     }
 
     a {
-        display: inline-flex;
-        flex-wrap: wrap;
+        padding: 20px;
+        display: inline;
         font-size: 40px;
         text-decoration: none;
-        margin: 0 5% 0 11%;
         padding-bottom: 3px;
-        border-bottom: 3px solid lightgray;
         color: lightgray;
-        animation-name: fade-in-text;
-        animation-duration: 1s;
-        animation-delay: 2s;
-        animation-fill-mode: backwards;
         text-shadow: 0px 1px 10px black;
     }
 
-    /*#photo {
-        margin-right: 7%;
+    a:hover {
+        color: #7638BD;
+        text-shadow: 0px 1px 10px rgb(55, 26, 88);
     }
-
-    #projects {
-        margin-left: 8%;
-    }*/
 }
